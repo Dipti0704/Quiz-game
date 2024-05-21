@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-container, .game-container, .result-container {
+    display: none;  /* Hide all containers initially */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffefd5;
+}
+
+.welcome-container {
+    display: flex; /* Show the welcome container */
+}
+
+.welcome-container h1 {
+    font-size: 3rem;
+    color: #ffa500;
+}
+
+.welcome-container .begin-button, .result-container button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    color: #ffa500;
+    font-size: 1.2rem;
+    border: 2px solid #ffa500;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.welcome-container .begin-button:hover, .result-container button:hover {
+    background-color: #ffa500;
+    color: #ffefd5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.game-header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px 20px;
+    position: absolute;
+    top: 20px;
+}
+
+.current-question, .current-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.question {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.option-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    padding: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.option-number {
+    padding: 10px;
+    background-color: #ffa500;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.option-text {
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.option:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.result-container .total-score {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
